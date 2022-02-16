@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: radikal, futura, sans;
+    line-height: 1.8;
+}
+
+.header_title{
+    font-size: 8rem;
+}
