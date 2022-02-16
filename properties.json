@@ -1,0 +1,55 @@
+{
+    "name": "Anton Kindt",
+
+    "nav_items": [
+        { "title": "Skills", "location": "skills" },
+        { "title": "Projecten", "location": "projecten" },
+        { "title": "About", "location": "about" }
+    ],
+
+    "header": {
+        "title": "Hey",
+        "text": "lorem"
+    },
+
+    "skills": [
+        {
+            "title": "scripting",
+            "values": [
+                { "title": "HTML", "level": "1" },
+                { "title": "CSS", "level": "1" },
+                { "title": "JavaScript", "level": "1" },
+                { "title": "PHP", "level": "1" },
+                { "title": "Python", "level": "1" }
+            ]
+        },
+        {
+            "title": "other",
+            "values": [
+                { "title": "HTML", "level": "1" },
+                { "title": "CSS", "level": "1" },
+                { "title": "JavaScript", "level": "1" },
+                { "title": "PHP", "level": "1" },
+                { "title": "Python", "level": "1" }
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "Project 1",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget",
+            "img": "page1.png",
+            "url": "https://www.google.com",
+            "github": "https://www.google.com"
+        },
+        {
+            "title": "Project 1",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget",
+            "img": "page1.png",
+            "url": "https://www.google.com",
+            "github": "https://www.google.com"
+        }
+    ],
+    "whoAmI": "Ik ben Anton",
+    "github": "https://www.google.com"
+}

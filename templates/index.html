@@ -6,8 +6,71 @@
   <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}" />
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  <header>
+    <div>
+      <nav>
+        <div>
+          {{props.name}}
+        </div>
+        <ul>
+          {% for nav_item in props.nav_items %}
+            <li>
+              <a href="#">
+                {{nav_item.title}}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <h1 class="text-3xl font-bold underline">
+        {{props.header.title}}
+      </h1>
+      <p>{{props.header.text}}</p>
+    </div>
+  </header>
+  <main>
+    <article>
+      <h2>Skills</h2>
+      {% for skill_sub in props.skills %}
+        <section>
+          <h3>{{skill_sub.title}}</h3>
+          <ul>
+            {% for skill in skill_sub["values"] %}
+              <li style="border: {{skill.level}}px solid black">
+                {{skill.title}}
+              </li>
+            {% endfor %}
+          </ul>
+        </section>
+      {% endfor %}
+    </article>
+    <article>
+      <h2>Projecten</h2>
+      {% for project in props.projects %}
+        <section>
+          <div>
+            <img src="{{url_for('static',filename='img/pagePictures/{0}'.format(project.img))}}" alt="">
+            <a href="{{project.url}}">Bezoek</a>
+            {% if project.github %}
+              <a href="{{project.github}}">Github</a>
+            {% endif %}
+          </div>
+          <div>
+            <h3>{{project.title}}</h3>
+            <p>{{project.text}}</p>
+          </div>
+        </section>
+      {% endfor %}
+    </article>
+    <article>
+      <h3>Wie ben ik</h3>
+      <p>{{props.whoAmI}}</p>
+    </article>
+  </main>
+  <footer>
+    Steel deze site -> <a href="{{props.github}}"><img src="{{url_for('static', filename='img/github.png')}}" alt=""></a>
+  </footer>
 </body>
 </html>
