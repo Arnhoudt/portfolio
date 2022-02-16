@@ -6,71 +6,12 @@
   <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}" />
 </head>
 <body>
-  <header>
-      <nav class="flex flex-row justify-between container mx-auto py-5 items-center">
-        <h1 class="text-3xl">
-          {{props.name}}
-        </h1>
-        <ul class="flex flex-row w-1/4 justify-between align-bottom">
-          {% for nav_item in props.nav_items %}
-            <li>
-              <a href="#">
-                {{nav_item.title}}
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      </nav>
-    <div class="bg-black text-white pt-20 pb-28">
-      <div class="container mx-auto px-10">
-        <h2 class="header_title font-bold pl-4">
-          {{props.header.title}}
-        </h2>
-        <p class="border-l-4 border-white pl-4 max-w-3xl text-xl leading-loose">{{props.header.text}}</p>
-      </div>
-    </div>
-  </header>
+  {% include 'header.html' %}
   <main>
-    <article>
-      <h2>Skills</h2>
-      {% for skill_sub in props.skills %}
-        <section>
-          <h3>{{skill_sub.title}}</h3>
-          <ul>
-            {% for skill in skill_sub["values"] %}
-              <li style="border: {{skill.level}}px solid black">
-                {{skill.title}}
-              </li>
-            {% endfor %}
-          </ul>
-        </section>
-      {% endfor %}
-    </article>
-    <article>
-      <h2>Projecten</h2>
-      {% for project in props.projects %}
-        <section>
-          <div>
-            <img src="{{url_for('static',filename='img/pagePictures/{0}'.format(project.img))}}" alt="">
-            <a href="{{project.url}}">Bezoek</a>
-            {% if project.github %}
-              <a href="{{project.github}}">Github</a>
-            {% endif %}
-          </div>
-          <div>
-            <h3>{{project.title}}</h3>
-            <p>{{project.text}}</p>
-          </div>
-        </section>
-      {% endfor %}
-    </article>
-    <article>
-      <h3>Wie ben ik</h3>
-      <p>{{props.whoAmI}}</p>
-    </article>
+    {% include 'skills.html' %}
+    {% include 'projects.html' %}
+    {% include 'whoAmI.html' %}
   </main>
-  <footer>
-    Steel deze site -> <a href="{{props.github}}"><img src="{{url_for('static', filename='img/github.png')}}" alt=""></a>
-  </footer>
+  {% include 'footer.html' %}
 </body>
 </html>

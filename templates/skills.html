@@ -1,0 +1,15 @@
+<article>
+    <h2 class="">Skills</h2>
+    {% for skill_sub in props.skills %}
+      <section>
+        <h3>{{skill_sub.title}}</h3>
+        <ul>
+          {% for skill in skill_sub["values"] %}
+            <li style="border: {{skill.level}}px solid black">
+              {{skill.title}}
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endfor %}
+</article>

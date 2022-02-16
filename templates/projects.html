@@ -1,0 +1,18 @@
+<article>
+    <h2>Projecten</h2>
+    {% for project in props.projects %}
+      <section>
+        <div>
+          <img src="{{url_for('static',filename='img/pagePictures/{0}'.format(project.img))}}" alt="">
+          <a href="{{project.url}}">Bezoek</a>
+          {% if project.github %}
+            <a href="{{project.github}}">Github</a>
+          {% endif %}
+        </div>
+        <div>
+          <h3>{{project.title}}</h3>
+          <p>{{project.text}}</p>
+        </div>
+      </section>
+    {% endfor %}
+</article>
