@@ -10,3 +10,11 @@ body {
 .header_title{
     font-size: 8rem;
 }
+
+h2{
+    @apply text-3xl;
+}
+
+h3{
+    @apply text-xl;
+}

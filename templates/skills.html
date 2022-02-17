@@ -1,11 +1,11 @@
-<article>
+<article class="py-16 container mx-auto">
     <h2 class="">Skills</h2>
     {% for skill_sub in props.skills %}
       <section>
-        <h3>{{skill_sub.title}}</h3>
-        <ul>
+        <h3 class="py-8">{{skill_sub.title}}</h3>
+        <ul class="flex flex-wrap gap-4">
           {% for skill in skill_sub["values"] %}
-            <li style="border: {{skill.level}}px solid black">
+            <li class="px-8 py-1.5 m-3" style="outline: {{skill.level}}px solid black; outline-offset: {{10 - skill.level | int}}px">
               {{skill.title}}
             </li>
           {% endfor %}
