@@ -1,2 +1,8 @@
 # python virtual environment
 myenv
+
+# frozen flask build
+build
+
+# pychache
+__pycache__
