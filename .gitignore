@@ -6,3 +6,6 @@ build
 
 # pychache
 __pycache__
+
+# tailwindcss build
+static/css/main.css
