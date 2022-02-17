@@ -37,14 +37,14 @@
     "projects": [
         {
             "title": "Project 1",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. ",
             "img": "page1.png",
             "url": "https://www.google.com",
             "github": "https://www.google.com"
         },
         {
             "title": "Project 1",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. Sed euismod, urna eget",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. ",
             "img": "page1.png",
             "url": "https://www.google.com",
             "github": "https://www.google.com"
