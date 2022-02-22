@@ -29,5 +29,5 @@ for f in $(find ./static/src/img -type f -regex ".*\.svg"); do
     basename=$(basename $f)
     directory=$(echo $name | sed -e 's/\/*[^\/]*$//g')
     mkdir -p "./static/build/img/$directory"
-    convert -colorspace RGB $f "./static/build/img/$directory/$basename"
+    cp $f "./static/build/img/$directory/$basename"
 done
