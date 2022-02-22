@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static',filename='build/style.css')}}" />
 </head>
 <body>
   {% include 'header.html' %}
@@ -13,5 +13,6 @@
     {% include 'whoAmI.html' %}
   </main>
   {% include 'footer.html' %}
+  {% include 'script.html' %}
 </body>
 </html>

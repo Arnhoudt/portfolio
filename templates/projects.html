@@ -1,17 +1,33 @@
 <article class="container">
     <h2 class="subTitle">Projecten</h2>
     {% for project in props.projects %}
-      <section class="flex gap-20">
-        <div class="w-3/5">
-          <img class="" src="{{url_for('static',filename='img/pagePictures/{0}'.format(project.img))}}" alt="">
+      <section class="flex lg:gap-10 sm:gap-5">
+        <div class="lg:w-3/5 sm:w-1/2">
+          <picture>
+            <source media="(min-width:1536px)" srcset=
+              "{{url_for('static', filename='build/img/pagePictures/1024_{0}'.format(project.img))}} 1x,
+              {{url_for('static', filename='build/img/pagePictures/2048_{0}'.format(project.img))}} 2x">
+            <source media="(min-width:1280px)" srcset=
+              "{{url_for('static', filename='build/img/pagePictures/768_{0}'.format(project.img))}} 1x,
+              {{url_for('static', filename='build/img/pagePictures/1536_{0}'.format(project.img))}} 2x">
+            <source media="(min-width:1024px)" srcset=
+              "{{url_for('static', filename='build/img/pagePictures/512_{0}'.format(project.img))}} 1x,
+              {{url_for('static', filename='build/img/pagePictures/1024_{0}'.format(project.img))}} 2x">
+            <source media="(min-width:768px)" srcset=
+              "{{url_for('static', filename='build/img/pagePictures/384_{0}'.format(project.img))}} 1x,
+              {{url_for('static', filename='build/img/pagePictures/768_{0}'.format(project.img))}} 2x">
+            <img class="w-full" src="{{url_for('static', filename='src/img/pagePictures/{0}'.format(project.img))}}" alt="">
+          </picture>
           <div class="flex items-center justify-around my-5">
             <a class="text-black bg-white border-2 border-black text-xl px-8 py-3" href="{{project.url}}">Bezoek</a>
             {% if project.github %}
-              <a href="{{project.github}}"><img class="w-10" src="{{url_for('static',filename='img/github.png')}}" alt=""></a>
+              <a href="{{project.github}}">
+
+              </a>
             {% endif %}
           </div>
         </div>
-        <div class="w-2/5">
+        <div class="lg:w-2/5 sm:w-1/2">
           <h3>{{project.title}}</h3>
           <p class="font-light">{{project.text}}</p>
         </div>

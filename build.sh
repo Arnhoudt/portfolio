@@ -22,5 +22,6 @@ if [ `npm list | grep -c $package` -eq 0 ]; then
     npm install $package --no-shrinkwrap
 fi
 
-npx tailwindcss -i ./static/src/style.css -o ./static/css/main.css --minify
+./createImages.sh
+npx tailwindcss -i ./static/src/style.css -o ./static/build/style.css --minify
 python ./static.py

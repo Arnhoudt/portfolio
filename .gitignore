@@ -8,4 +8,4 @@ build
 __pycache__
 
 # tailwindcss build
-static/css/main.css
+static/build

@@ -1,0 +1,31 @@
+<script>
+    getParameter = (key) => {
+    
+    // Address of the current window
+    address = window.location.search
+
+    // Returns a URLSearchParams object instance
+    parameterList = new URLSearchParams(address)
+
+    // Returning the respected value associated
+    // with the provided key
+    return parameterList.get(key)
+    }
+
+    decodedName = ""
+    getParameter("name").split("-").reverse().forEach((c, i) =>{
+        value = parseInt(c)
+        while(value > 0){
+            decodedName = String.fromCharCode(value % 256) + decodedName
+            value = Math.floor(value / 256)
+        }
+    })
+
+    document.querySelector(".companyName").textContent = decodedName
+
+    // terminal message
+    console.log("%c%s", "color: #00ff00; font-size: 20px;", "Hello, " + decodedName + "!")
+    // terminal warming
+    console.log("%c%s", "color: #ff0000; font-size: 14px;", "Try hacking the name of the company in the URL to see what happens!")
+
+</script>
