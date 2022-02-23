@@ -8,7 +8,6 @@ if [ -d "./static/build/img" ]; then
 fi
 
 
-# for each png in static/src/img
 for f in $(find ./static/src/img -type f -regex ".*\.png"); do
     # do some stuff here with "$f"
     # remember to quote it or spaces may misbehave
@@ -22,7 +21,7 @@ for f in $(find ./static/src/img -type f -regex ".*\.png"); do
 done
 
 # for each file in static/src/img
-for f in $(find ./static/src/img -type f -regex ".*\.svg"); do
+for f in $(find -E ./static/src/img -regex '.*\.(ico|svg)'); do
     # do some stuff here with "$f"
     # remember to quote it or spaces may misbehave
     name=$(echo $f | sed -e 's/.*\/img\///g')
