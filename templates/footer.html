@@ -1,3 +1,8 @@
-<footer>
-    Steel deze site -> <a href="{{props.github}}"><img src="{{url_for('static', filename='img/github.png')}}" alt=""></a>
+<footer class="bg-black text-white align-middle flex">
+    <a href="{{props.github}}">
+        <div class="flex mx-auto items-center">
+            🄯 Steel deze site 
+            <img class="filter-white w-16 h-16 p-3 mx-4" src="{{url_for('static', filename='build/img/github-icon.svg')}}" alt="">
+        </div>
+    </a>
 </footer>
