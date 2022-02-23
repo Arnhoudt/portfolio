@@ -27,5 +27,10 @@
     console.log("%c%s", "color: #00ff00; font-size: 20px;", "Hello, " + decodedName + "!")
     // terminal warming
     console.log("%c%s", "color: #ff0000; font-size: 14px;", "Try hacking the name of the company in the URL to see what happens!")
-
+    document.querySelector(".showMore").addEventListener("click", () => {
+        document.querySelectorAll(".hidden + .project").forEach(e => {
+            e.classList.remove("hidden")
+        })
+        document.querySelector(".showMore").remove()
+    })
 </script>

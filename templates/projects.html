@@ -1,7 +1,8 @@
 <article class="container">
     <h2 class="subTitle">Projecten</h2>
-    {% for project in props.projects %}
-      <section class="flex lg:gap-10 sm:gap-5">
+    {% for i, project in range(props.projects|length)|zip(props.projects) %}
+
+      <section class="project {% if i > 2 %}hidden{% endif %} flex lg:gap-10 sm:gap-5">
         <div class="lg:w-3/5 sm:w-1/2">
           <picture>
             <source media="(min-width:1536px)" srcset=
@@ -22,7 +23,7 @@
             <a class="text-black bg-white border-2 border-black text-xl px-8 py-3" href="{{project.url}}">Bezoek</a>
             {% if project.github %}
               <a href="{{project.github}}">
-
+                <img class="filter-black w-16 h-16 p-3 mx-4" src="{{url_for('static', filename='build/img/github-icon.svg')}}" alt="">
               </a>
             {% endif %}
           </div>
@@ -33,4 +34,5 @@
         </div>
       </section>
     {% endfor %}
+    <button class="showMore flex mx-auto bg-black text-white py-3 px-10">Toon meer</button>
 </article>

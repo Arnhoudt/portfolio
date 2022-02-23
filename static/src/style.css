@@ -18,3 +18,11 @@ h2{
 h3{
     @apply text-xl;
 }
+
+.filter-white{
+    filter: brightness(100%);
+}
+
+.filter-black{
+    filter: brightness(100%);
+}
