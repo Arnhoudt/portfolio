@@ -34,7 +34,7 @@ h3{
 }
 
 .filter-black{
-    filter: brightness(100%);
+    filter: brightness(0%);
 }
 
 .collapsed.skill_description{
