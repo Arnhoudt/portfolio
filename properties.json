@@ -39,9 +39,8 @@
         {
             "title": "Persoonlijke portfolio",
             "text": "De website waar je momenteel op zit",
-            "img": "bodoni.png",
-            "url": "https://www.google.com",
-            "github": "https://www.google.com",
+            "img": "portfolio.png",
+            "github": "https://github.com/Arnhoudt/portfolio",
             "visitable": false
         },
         {

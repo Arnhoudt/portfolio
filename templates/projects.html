@@ -8,21 +8,24 @@
         {% endif %}
         <div class="flex flex-col-reverse gap-0 md:flex-row mt-4 md:mt-12 lg:gap-10 md:gap-5">
           <div class="flex flex-col items-center lg:w-3/5 md:w-1/2">
-            <picture>
-              <source media="(min-width:1536px)" srcset=
-                "{{url_for('static', filename='build/img/pagePictures/1024_{0}'.format(project.img))}} 1x,
-                {{url_for('static', filename='build/img/pagePictures/2048_{0}'.format(project.img))}} 2x">
-              <source media="(min-width:1280px)" srcset=
-                "{{url_for('static', filename='build/img/pagePictures/768_{0}'.format(project.img))}} 1x,
-                {{url_for('static', filename='build/img/pagePictures/1536_{0}'.format(project.img))}} 2x">
-              <source media="(min-width:1024px)" srcset=
-                "{{url_for('static', filename='build/img/pagePictures/512_{0}'.format(project.img))}} 1x,
-                {{url_for('static', filename='build/img/pagePictures/1024_{0}'.format(project.img))}} 2x">
-              <source media="(min-width:768px)" srcset=
-                "{{url_for('static', filename='build/img/pagePictures/384_{0}'.format(project.img))}} 1x,
-                {{url_for('static', filename='build/img/pagePictures/768_{0}'.format(project.img))}} 2x">
-              <img class="w-full" src="{{url_for('static', filename='src/img/pagePictures/{0}'.format(project.img))}}" alt="">
-            </picture>
+            <div class="relative w-full h-full">
+              <div class="bg-overlay absolute top-0 left-0 right-0 bottom-0 z-50"></div>
+              <picture class="w-full h-full">
+                <source media="(min-width:1536px)" srcset=
+                  "{{url_for('static', filename='build/img/pagePictures/1024_{0}'.format(project.img))}} 1x,
+                  {{url_for('static', filename='build/img/pagePictures/2048_{0}'.format(project.img))}} 2x">
+                <source media="(min-width:1280px)" srcset=
+                  "{{url_for('static', filename='build/img/pagePictures/768_{0}'.format(project.img))}} 1x,
+                  {{url_for('static', filename='build/img/pagePictures/1536_{0}'.format(project.img))}} 2x">
+                <source media="(min-width:1024px)" srcset=
+                  "{{url_for('static', filename='build/img/pagePictures/512_{0}'.format(project.img))}} 1x,
+                  {{url_for('static', filename='build/img/pagePictures/1024_{0}'.format(project.img))}} 2x">
+                <source media="(min-width:768px)" srcset=
+                  "{{url_for('static', filename='build/img/pagePictures/384_{0}'.format(project.img))}} 1x,
+                  {{url_for('static', filename='build/img/pagePictures/768_{0}'.format(project.img))}} 2x">
+                <img class="w-full" src="{{url_for('static', filename='src/img/pagePictures/{0}'.format(project.img))}}" alt="">
+              </picture>
+            </div>
             <div class="flex w-full md:w-1/2 items-center justify-around mt-5">
               {% if project.visitable %}
               <a class="text-black bg-white border-2 border-black text-xl px-8 py-3" href="{{project.url}}">Bezoek</a>
