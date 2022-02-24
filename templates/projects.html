@@ -4,9 +4,9 @@
 
       <section class="project {% if i > 2 %}hidden{% endif %}">
         {% if i != 0 %}
-        <div class="flex justify-center"><hr class="w-1/2 my-16"></div>
+        <div class="flex justify-center"><hr class="w-3/4 md:w-1/2 border-black md:border-gray-300 my-8 md:my-16"></div>
         {% endif %}
-        <div class="flex flex-col gap-10 md:flex-row mt-12 lg:gap-10 md:gap-5">
+        <div class="flex flex-col-reverse gap-0 md:flex-row mt-4 md:mt-12 lg:gap-10 md:gap-5">
           <div class="lg:w-3/5 md:w-1/2">
             <picture>
               <source media="(min-width:1536px)" srcset=
@@ -32,7 +32,7 @@
               {% endif %}
             </div>
           </div>
-          <div class="lg:w-2/5 md:w-1/2">
+          <div class="mb-5 md:mb-0 lg:w-2/5 md:w-1/2">
             <h3>{{project.title}}</h3>
             <p class="font-light">{{project.text}}</p>
           </div>
@@ -40,5 +40,7 @@
       </section>
 
     {% endfor %}
-    <button class="showMore flex mx-auto bg-black text-white py-3 px-10">Toon meer</button>
+
+    <p class="showMore text-center mt-20">Wil je meer van mijn projecten zien?</p>
+    <button class="showMore flex mx-auto bg-black text-white mt-4 py-3 px-16 md:px-32">Toon meer</button>
 </article>
