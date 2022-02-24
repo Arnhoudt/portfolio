@@ -7,7 +7,7 @@
         <div class="flex justify-center"><hr class="w-3/4 md:w-1/2 border-black md:border-gray-300 my-8 md:my-16"></div>
         {% endif %}
         <div class="flex flex-col-reverse gap-0 md:flex-row mt-4 md:mt-12 lg:gap-10 md:gap-5">
-          <div class="lg:w-3/5 md:w-1/2">
+          <div class="flex flex-col items-center lg:w-3/5 md:w-1/2">
             <picture>
               <source media="(min-width:1536px)" srcset=
                 "{{url_for('static', filename='build/img/pagePictures/1024_{0}'.format(project.img))}} 1x,
@@ -23,11 +23,13 @@
                 {{url_for('static', filename='build/img/pagePictures/768_{0}'.format(project.img))}} 2x">
               <img class="w-full" src="{{url_for('static', filename='src/img/pagePictures/{0}'.format(project.img))}}" alt="">
             </picture>
-            <div class="flex items-center justify-around mt-5">
+            <div class="flex w-full md:w-1/2 items-center justify-around mt-5">
+              {% if project.visitable %}
               <a class="text-black bg-white border-2 border-black text-xl px-8 py-3" href="{{project.url}}">Bezoek</a>
+              {% endif %}
               {% if project.github %}
                 <a href="{{project.github}}">
-                  <img class="filter-black w-16 h-16 p-3 mx-4" src="{{url_for('static', filename='build/img/github-icon.svg')}}" alt="">
+                  <img class="filter-black w-12 h-12" src="{{url_for('static', filename='build/img/github-icon.svg')}}" alt="">
                 </a>
               {% endif %}
             </div>

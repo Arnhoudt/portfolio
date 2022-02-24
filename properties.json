@@ -37,39 +37,44 @@
     ],
     "projects": [
         {
-            "title": "Project 1",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. ",
+            "title": "Persoonlijke portfolio",
+            "text": "De website waar je momenteel op zit",
             "img": "bodoni.png",
             "url": "https://www.google.com",
-            "github": "https://www.google.com"
+            "github": "https://www.google.com",
+            "visitable": false
         },
         {
             "title": "Project 1",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. ",
             "img": "bodoni.png",
             "url": "https://www.google.com",
-            "github": "https://www.google.com"
+            "github": "https://www.google.com",
+            "visitable": true
         },
         {
             "title": "Project 1",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. ",
             "img": "bodoni.png",
             "url": "https://www.google.com",
-            "github": "https://www.google.com"
+            "github": "https://www.google.com",
+            "visitable": true
         },
         {
             "title": "Project 1",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. ",
             "img": "bodoni.png",
             "url": "https://www.google.com",
-            "github": "https://www.google.com"
+            "github": "https://www.google.com",
+            "visitable": true
         },
         {
             "title": "Project 1",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. ",
             "img": "page1.png",
             "url": "https://www.google.com",
-            "github": "https://www.google.com"
+            "github": "https://www.google.com",
+            "visitable": true
         }
     ],
     "whoAmI": [
