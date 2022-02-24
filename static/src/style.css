@@ -6,10 +6,20 @@ body {
     font-family: radikal, futura, sans;
     line-height: 1.8;
 }
-
 .header_title{
-    font-size: 8rem;
+    font-size: 3.6rem;
 }
+@media (min-width: 640px) {
+    .header_title{
+        font-size: 5rem;
+    }    
+}
+@media (min-width: 1024px) {
+    .header_title{
+        font-size: 8rem;
+    }    
+}
+
 
 h2{
     @apply text-3xl;
