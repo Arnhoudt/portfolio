@@ -13,24 +13,40 @@
     }
 
     decodedName = ""
-    getParameter("name").split("-").reverse().forEach((c, i) =>{
-        value = parseInt(c)
-        while(value > 0){
-            decodedName = String.fromCharCode(value % 256) + decodedName
-            value = Math.floor(value / 256)
-        }
-    })
+    if(getParameter("name")){
+        getParameter("name").split("-").reverse().forEach((c, i) =>{
+            value = parseInt(c)
+            while(value > 0){
+                decodedName = String.fromCharCode(value % 256) + decodedName
+                value = Math.floor(value / 256)
+            }
+        })
 
-    document.querySelector(".companyName").textContent = decodedName
+        document.querySelector(".companyName").textContent = decodedName
 
-    // terminal message
-    console.log("%c%s", "color: #00ff00; font-size: 20px;", "Hello, " + decodedName + "!")
-    // terminal warming
-    console.log("%c%s", "color: #ff0000; font-size: 14px;", "Try hacking the name of the company in the URL to see what happens!")
+        // terminal message
+        console.log("%c%s", "color: #00ff00; font-size: 20px;", "Hello, " + decodedName + "!")
+        // terminal warming
+        console.log("%c%s", "color: #ff0000; font-size: 14px;", "Try hacking the name of the company in the URL to see what happens!")
+    }
+
     document.querySelector(".showMore").addEventListener("click", () => {
         document.querySelectorAll(".hidden + .project").forEach(e => {
             e.classList.remove("hidden")
         })
         document.querySelector(".showMore").remove()
+    })
+
+    document.querySelectorAll(".skill").forEach(skill => {
+        skill.addEventListener("click", e=>{
+            let first = true
+            document.querySelectorAll(".skill_description:not(.collapsed)").forEach(e => {
+                e.classList.add("collapsed")
+                first = false
+            })
+            let target = e.currentTarget.getAttribute("target")
+            setTimeout(() => {document.querySelector(`.${target}.skill_description`).classList.remove("collapsed")}, !first?300:0)
+            
+        })
     })
 </script>

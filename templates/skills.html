@@ -1,15 +1,23 @@
 <article class="py-16 container">
-    <h2 class="">Skills</h2>
+    <h2 class="skills">Skills</h2>
     {% for skill_sub in props.skills %}
       <section>
         <h3 class="py-8">{{skill_sub.title}}</h3>
         <ul class="flex flex-wrap gap-4">
           {% for skill in skill_sub["values"] %}
-            <li class="px-8 py-1.5 m-3" style="outline: {{skill.level}}px solid black; outline-offset: {{10 - skill.level | int}}px">
-              {{skill.title}}
+            <li target="{{skill.title}}" class="skill flex items-center px-8 py-1.5 m-3" style="outline: {{skill.level}}px solid black; outline-offset: {{10 - skill.level | int}}px">
+              {{skill.title}} <img class="w-4 ml-4" src="{{url_for('static', filename='build/img/arrowDown.svg')}}" alt="">
             </li>
           {% endfor %}
         </ul>
+        <article class="my-3">
+          {% for skill in skill_sub["values"] %}
+              <section class="collapsed md:w-96 bg-black text-white {{skill.title}} skill_description">
+                <h4>{{skill.title}}</h4>
+                <p class="font-light">{{skill.description}}</p>
+              </section>
+            {% endfor %}
+        </article>
       </section>
     {% endfor %}
 </article>
