@@ -71,6 +71,23 @@
             "github": "https://www.google.com"
         }
     ],
-    "whoAmI": "Ik ben Anton",
+    "whoAmI": [
+        {
+            "subtitle": "I am a",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. "
+        },
+        {
+            "subtitle": "I am a",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. "
+        },
+        {
+            "subtitle": "I am a",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. "
+        },
+        {
+            "subtitle": "I am a",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. "
+        }
+    ],
     "github": "https://www.google.com"
 }

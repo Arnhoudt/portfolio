@@ -1,4 +1,9 @@
-<article>
+<article class="container md:w-2/3 lg:w-3/5 xl:2/5 pt-16">
     <h2 class="subTitle">Wie ben ik</h2>
-    <p>{{props.whoAmI}}</p>
+    {% for section in props.whoAmI %}
+        <section class>
+            <h3 class="mt-6">{{section.subtitle}}</h3>
+            <p class="font-light">{{section.text}}</p>
+        </section>
+    {% endfor %}
 </article>
