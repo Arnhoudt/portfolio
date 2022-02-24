@@ -4,7 +4,7 @@
     "nav_items": [
         { "title": "Skills", "location": "skills" },
         { "title": "Projecten", "location": "projecten" },
-        { "title": "About", "location": "about" }
+        { "title": "About", "location": "whoAmi" }
     ],
 
     "header": {

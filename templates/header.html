@@ -6,7 +6,7 @@
       <ul class="flex flex-row w-1/4 justify-between align-bottom">
         {% for nav_item in props.nav_items %}
           <li>
-            <a href="#">
+            <a class="nav_item" target="{{nav_item.location}}">
               {{nav_item.title}}
             </a>
           </li>

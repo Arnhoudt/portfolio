@@ -49,4 +49,23 @@
             
         })
     })
+
+    const scrollToTargetAdjusted = target => {
+        let headerOffset = 50;
+        let elementPosition = target.getBoundingClientRect().top;
+        let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
+    }
+    //scroll to element when clicking on the nav item
+    document.querySelectorAll(".nav_item").forEach(nav_item => {
+        nav_item.addEventListener("click", e=>{
+            e.preventDefault()
+            let target = e.currentTarget.getAttribute("target")
+            scrollToTargetAdjusted(document.querySelector(`#${target}`))
+        })
+    })
 </script>
