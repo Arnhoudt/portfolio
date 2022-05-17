@@ -39,14 +39,17 @@
 
     document.querySelectorAll(".skill").forEach(skill => {
         skill.addEventListener("click", e=>{
+            let target = e.currentTarget.getAttribute("target")
+            let $targetElement = document.querySelector(`.${target}.skill_description`)
+            if ($targetElement== document.querySelector(".skill_description:not(.collapsed)")){
+                return;
+            }
             let first = true
             document.querySelectorAll(".skill_description:not(.collapsed)").forEach(e => {
                 e.classList.add("collapsed")
                 first = false
             })
-            let target = e.currentTarget.getAttribute("target")
-            setTimeout(() => {document.querySelector(`.${target}.skill_description`).classList.remove("collapsed")}, !first?300:0)
-            
+            setTimeout(() => {$targetElement.classList.remove("collapsed")}, !first?300:0)
         })
     })
 

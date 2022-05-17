@@ -13,7 +13,15 @@
         <article class="my-3">
           {% for skill in skill_sub["values"] %}
               <section class="collapsed md:w-96 bg-black text-white {{skill.title}} skill_description">
-                <h4>{{skill.title}}</h4>
+                <div class="flex">
+                  <h4>{{skill.title}}</h4>
+                  <div class="pl-4 skillLevel{{skill.level}} flex justify-center">
+                    {% set colormap = ["cyan", "green", "yellow", "orange", "red"]%}
+                    {% for _ in range(skill.level|int) %}
+                      <img class="px-1 filter-{{ colormap[skill.level|int - 1] }}" src="{{url_for('static', filename='build/img/dot.svg')}}" width="24px" alt="">
+                    {% endfor %}
+                  </div>
+                </div>
                 <p class="font-light">{{skill.description}}</p>
               </section>
             {% endfor %}

@@ -21,9 +21,15 @@
                   "{{url_for('static', filename='build/img/pagePictures/512_{0}'.format(project.img))}} 1x,
                   {{url_for('static', filename='build/img/pagePictures/1024_{0}'.format(project.img))}} 2x">
                 <source media="(min-width:768px)" srcset=
-                  "{{url_for('static', filename='build/img/pagePictures/384_{0}'.format(project.img))}} 1x,
-                  {{url_for('static', filename='build/img/pagePictures/768_{0}'.format(project.img))}} 2x">
-                <img class="w-full" src="{{url_for('static', filename='src/img/pagePictures/{0}'.format(project.img))}}" alt="">
+                "{{url_for('static', filename='build/img/pagePictures/384_{0}'.format(project.img))}} 1x,
+                {{url_for('static', filename='build/img/pagePictures/768_{0}'.format(project.img))}} 2x">
+                <source media="(min-width:512px)" srcset=
+                "{{url_for('static', filename='build/img/pagePictures/768_{0}'.format(project.img))}} 1x,
+                {{url_for('static', filename='build/img/pagePictures/1536_{0}'.format(project.img))}} 2x">
+                <source srcset=
+                "{{url_for('static', filename='build/img/pagePictures/512_{0}'.format(project.img))}} 1x,
+                {{url_for('static', filename='build/img/pagePictures/1024_{0}'.format(project.img))}} 2x">
+                <img class="w-full" alt="">
               </picture>
             </div>
             <div class="flex w-full md:w-1/2 items-center justify-around mt-5">

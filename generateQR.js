@@ -2,7 +2,6 @@ value = 0
 decodedName = process.argv[2]
 encodedName = ""
 decodedName.split("").forEach((c, i) =>{
-    console.log(c, i)
     value *= 256
     value += (c.charCodeAt(0))
     if(i % 6 == 5){

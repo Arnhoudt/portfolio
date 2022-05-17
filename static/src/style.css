@@ -37,6 +37,26 @@ h3{
     filter: brightness(0%);
 }
 
+.filter-cyan {
+    filter: hue-rotate(180deg) brightness(200%);
+}
+
+.filter-green {
+    filter: hue-rotate(135deg) brightness(200%);
+}
+
+.filter-yellow {
+    filter: hue-rotate(45deg) brightness(200%);
+}
+
+.filter-orange {
+    filter: hue-rotate(0deg) brightness(200%);
+}
+
+.filter-red {
+    filter: hue-rotate(0deg) brightness(100%);
+}
+
 .collapsed.skill_description{
     max-height: 0;
     padding: 0;
