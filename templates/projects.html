@@ -32,7 +32,7 @@
                 <img class="w-full" alt="">
               </picture>
             </div>
-            <div class="flex w-full md:w-1/2 items-center justify-around mt-5">
+            <div class="flex w-full md:w-2/3 sm:w-1/2 items-center justify-around mt-5">
               {% if project.visitable %}
               <a class="text-black bg-white border-2 border-black text-xl px-8 py-3" href="{{project.url}}">Bezoek</a>
               {% endif %}
@@ -44,7 +44,7 @@
             </div>
           </div>
           <div class="mb-5 md:mb-0 lg:w-2/5 md:w-1/2">
-            <h3>{{project.title}}</h3>
+            <h3 class="pb-2">{{project.title}}</h3>
             <p class="font-light">{{project.text}}</p>
           </div>
         </div>

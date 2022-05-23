@@ -62,9 +62,14 @@ h3{
     padding: 0;
     transition: max-height 0.3s linear, padding 0s linear 0.3s;
 }
+
 .skill_description{
     max-height: 30rem;
     transition: max-height 0.3s linear;
     overflow-y: hidden;
     padding: 2rem 3rem;
+}
+
+.skillCategoryActive{
+    height: 15rem;
 }
