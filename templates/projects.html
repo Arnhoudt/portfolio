@@ -6,9 +6,9 @@
         {% if i != 0 %}
         <div class="flex justify-center"><hr class="w-3/4 md:w-1/2 border-black md:border-gray-300 my-8 md:my-16"></div>
         {% endif %}
-        <div class="flex flex-col-reverse gap-0 md:flex-row mt-4 md:mt-12 lg:gap-10 md:gap-5">
-          <div class="flex flex-col items-center lg:w-3/5 md:w-1/2">
-            <div class="relative w-full h-full">
+        <div class="flex flex-col-reverse gap-0 lg:flex-row mt-4 lg:mt-12 lg:gap-10 md:gap-5">
+          <div class="flex flex-col items-center lg:w-3/5">
+            <div class="relative w-full">
               <div class="bg-overlay absolute top-0 left-0 right-0 bottom-0 z-50"></div>
               <picture class="w-full h-full">
                 <source media="(min-width:1536px)" srcset=
@@ -32,7 +32,7 @@
                 <img class="w-full" alt="">
               </picture>
             </div>
-            <div class="flex w-full md:w-2/3 sm:w-1/2 items-center justify-around mt-5">
+            <div class="flex w-full md:w-1/2 sm:w-1/2 items-center justify-around mt-5">
               {% if project.visitable %}
               <a class="text-black bg-white border-2 border-black text-xl px-8 py-3" href="{{project.url}}">Bezoek</a>
               {% endif %}
@@ -43,9 +43,21 @@
               {% endif %}
             </div>
           </div>
-          <div class="mb-5 md:mb-0 lg:w-2/5 md:w-1/2">
+          <div class="mb-5 lg:mb-0 lg:w-2/5">
             <h3 class="pb-2">{{project.title}}</h3>
+            <h4 class="hidden">beschrijving</h4>
             <p class="font-light">{{project.text}}</p>
+            <div class="stack  border-t-2 mt-4">
+              <h4 class="hidden">Stack</h4>
+              <div class="flex flex-wrap">
+              {% for part in project.stack %}
+                <div class="stackItem w-12 m-4 flex flex-col justify-center items-center">
+                <img src="{{url_for('static', filename='build/img/stack/{}.png'.format(part))}}"/>
+                <p class="font-light text-xs pt-2">{{part}}</p>
+                </div>
+              {% endfor %}
+              </div>
+            </div>
           </div>
         </div>
       </section>

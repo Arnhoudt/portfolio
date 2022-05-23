@@ -39,6 +39,7 @@
         {
             "title": "Persoonlijke portfolio",
             "text": "Dit is de website waar je momenteel op zit. Deze pagina is gemaakt met behulp van flask, een python framework voor websites. Voor styling maakt de website gebruik van Tailwindcss, een modern CSS famework dat gebruikt maakt van een utility based aanpak.",
+            "stack": ["html5", "CSS", "javascript", "tailwindcss", "Python", "Flask", "nginx"],
             "img": "portfolio.png",
             "github": "https://github.com/Arnhoudt/portfolio",
             "visitable": false
@@ -46,6 +47,7 @@
         {
             "title": "Opera Ballet Vlaanderen",
             "text": "Deze 3D website is als schoolproject gemaakt voor Opera Ballet vlaanderen. De website is gemaakt met behulp van Three.js (een javascript framework voor 3D visualisaties), React en Node.js.",
+            "stack": ["html5", "CSS", "javascript", "threejs", "nodejs", "react", "heroku"],
             "img": "bodoni.png",
             "url": "https://obv-major.herokuapp.com/",
             "github": "https://github.com/Arnhoudt/OperaBalletVlaanderen",
@@ -54,6 +56,7 @@
         {
             "title": "Bodoni Font",
             "text": "Het maken van deze website was gegeven als opdracht voor de Devine opleiding (3de bachelor).",
+            "stack": ["html5", "CSS", "javascript", "greensock", "nodejs"],
             "img": "bodoni.png",
             "url": "https://anton-kindt-bodoni.herokuapp.com/html/build/src/",
             "github": "https://github.com/Arnhoudt/integration3",
