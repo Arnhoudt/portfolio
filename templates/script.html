@@ -32,7 +32,8 @@
     console.log(decodedName)
 
     document.querySelector("button.showMore").addEventListener("click", () => {
-        document.querySelectorAll(".hidden + .project").forEach(e => {
+        document.querySelectorAll(".project").forEach(e => {
+            console.log(e)
             e.classList.remove("hidden")
         })
         document.querySelectorAll(".showMore").forEach(el => {el.remove()})

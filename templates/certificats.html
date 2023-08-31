@@ -1,0 +1,11 @@
+<article class="py-8 md:py-16 container">
+    <h2 id="skills" class="skills">Certificaten</h2>
+    <div class="flex flex-wrap">
+        {% for certificats in props.certificats %}
+        <section class="text-center p-4 w-56 bg-slate-100 m-2 rounded-md">
+          <img class="inline p-2" src="{{url_for('static', filename='build/img/certificat/{0}'.format(certificats.img))}}" alt="">
+          <p>{{certificats.title}}</p>
+        </section>
+      {% endfor %}
+    </div>
+</article>

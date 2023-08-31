@@ -2,7 +2,6 @@
     "name": "Anton Kindt",
 
     "nav_items": [
-        { "title": "Skills", "location": "skills" },
         { "title": "Projecten", "location": "projecten" },
         { "title": "About", "location": "whoAmi" }
     ],
@@ -10,32 +9,39 @@
     "header": {
         "title": "Hey",
         "jobTitle": "Web Developer / Designer",
-        "text": "Ik ben een webdeveloper met een passie voor gebruiksvriendelijkheid en design. Op dit moment heb ik mijn opleiding Devine afgerond en in afwachting van mijn stage en bachelor proef in september wens ik enige werkervaring op te doen. Ik heb interesse in nieuwe ervaringen, ontdekkingen, uitdagingen en andere mensen leren kennen. Daarom heb ik in 2017 een sponsor tocht gemaakt van Frankrijk naar Santiago de Compostella ten voordele van het BackOnTrack fonds wat een totaal van 3000 euro opleverde."
+        "text": "Leergierige webdeveloper met kennis van design, user experience en systeembeheer. Op zoek naar een job met nieuwe ervaringen en een moderne aanpak."
     },
 
     "skills": [
+        
+    ],
+    "certificats": [
         {
-            "title": "Programmeren",
-            "values": [ 
-                { "title": "Javascript", "level": "5", "description": "Als webdeveloper is het onmogelijk om javascript niet te kennen. Ik ben ervaren in het programeren van vannila javascript " },
-                { "title": "CSS", "level": "2" },
-                { "title": "JavaScript", "level": "3" },
-                { "title": "PHP", "level": "4" },
-                { "title": "Python", "level": "5" }
-            ]
+            "title": "bachelor in design en development",
+            "img": "howest.jpg"
         },
         {
-            "title": "other",
-            "values": [
-                { "title": "HTML2", "level": "5" },
-                { "title": "CSS2", "level": "4" },
-                { "title": "JavaScript2", "level": "3" },
-                { "title": "PHP2", "level": "2" },
-                { "title": "Python2", "level": "1" }
-            ]
+            "title": "Hoofdanimator",
+            "img": "VlaanderenIsJeugd.png"
+        },
+        {
+            "title": "Animator",
+            "img": "VlaanderenIsJeugd.png"
+        },
+        {
+            "title": "BIPT radio amateur",
+            "img": "bipt.jpg"
         }
     ],
     "projects": [
+        {
+            "title": "Spexter",
+            "text": "Als developer en designer van het team kreeg ik de opdracht om - na een week te brainstormen over wat we exact gingen maken - Het design, front-end en backend te maken. Deze webapp is een prototype van onze applicatie die gemaakt is om doktersverslagen verstaanbaar te maken door moeilijke woorden te highlighten en uit te leggen.",
+            "stack": ["html5", "CSS", "javascript", "tailwindcss", "sveltekit", "tesseract", "nginx"],
+            "img": "spexter.png",
+            "url": "spexter.com",
+            "visitable": true
+        },
         {
             "title": "Persoonlijke portfolio",
             "text": "Dit is de website waar je momenteel op zit. Deze pagina is gemaakt met behulp van flask, een python framework voor websites. Voor styling maakt de website gebruik van Tailwindcss, een modern CSS famework dat gebruikt maakt van een utility based aanpak.",
@@ -45,38 +51,56 @@
             "visitable": false
         },
         {
+            "title": "Kleuren harde schijf",
+            "text": "Als schoolproject moesten we een installatie maken in het thema audio/video voor kinderen. Deze harde schijf legt op een leuke manier aan kinderen uit hoe een harde schijf (of andere disk media) werkt door een uitvergrote vorm van een harde schijf dat gebruik maakt van kleuren om bits voor te stellen.",
+            "stack": ["raspberrypi", "micropython", "blender", "Python", "3d printing", "Lasercutting"],
+            "img": "portfolio.png",
+            "youtube": ""
+        },
+        {
+            "title": "Manticore",
+            "text": "Je kan niet de hele dag voor de computer zitten. Daarom ben ik als hobby en bijberoep een winkel gestart in bordspellen. Hierbij heb ik veel bijgeleerd over boekhouding, marketing en het runnen van een bedrijf.",
+            "stack": ["odoo", "Lasercutting"],
+            "img": "inside.png",
+            "visitable": false
+        },
+        {
+            "title": "Manticore webshop",
+            "text": "Dit is de webshop voor mensen op producten van de manticore te reserveren.",
+            "stack": ["sveltekit", "tailwindcss", "html5", "CSS", "javascript", "nginx"],
+            "img": "manticore-website.png",
+            "url": "https://manticore-brakel.be/",
+            "visitable": true
+        },
+        {
+            "title": "Spaghetti avond website",
+            "text": "Als leider in een lokale jeugdbeweging heb ik deze website gemaakt om mensen toe te laten online kaartjes te kopen en het event te adverteren",
+            "stack": ["html5", "tailwindcss", "nginx", "stripe"],
+            "img": "spaghettiAvond.png",
+            "github": "https://github.com/Arnhoudt/OperaBalletVlaanderen",
+            "url": "https://jokribrakel.be/",
+            "visitable": true
+        },
+        {
+            "title": "Chicken Game",
+            "text": "Voor het maken van deze game heb ik 1 week tijd gekregen om eerst 3 dagen unity te leren en dan 2 dagen een game maken. We waren volledig vrij om te kiezen wat we deden. De assets zijn niet zelf gemaakt.",
+            "stack": ["unity", "c#"],
+            "img": "chickenGame.png",
+            "youtube": ""
+        },
+        {
             "title": "Opera Ballet Vlaanderen",
             "text": "Deze 3D website is als schoolproject gemaakt voor Opera Ballet vlaanderen. De website is gemaakt met behulp van Three.js (een javascript framework voor 3D visualisaties), React en Node.js.",
             "stack": ["html5", "CSS", "javascript", "threejs", "nodejs", "react", "heroku"],
-            "img": "bodoni.png",
-            "url": "https://obv-major.herokuapp.com/",
-            "github": "https://github.com/Arnhoudt/OperaBalletVlaanderen",
-            "visitable": true
+            "img": "obv.png",
+            "github": "https://github.com/Arnhoudt/OperaBalletVlaanderen"
         },
         {
             "title": "Bodoni Font",
             "text": "Het maken van deze website was gegeven als opdracht voor de Devine opleiding (3de bachelor).",
             "stack": ["html5", "CSS", "javascript", "greensock", "nodejs"],
             "img": "bodoni.png",
-            "url": "https://anton-kindt-bodoni.herokuapp.com/html/build/src/",
-            "github": "https://github.com/Arnhoudt/integration3",
-            "visitable": true
-        },
-        {
-            "title": "Project 1",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. ",
-            "img": "bodoni.png",
-            "url": "https://www.google.com",
-            "github": "https://www.google.com",
-            "visitable": true
-        },
-        {
-            "title": "Project 1",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eget aliquet elementum, nisi nisl aliquet nunc, euismod aliquam nisl nunc euismod nisl. ",
-            "img": "page1.png",
-            "url": "https://www.google.com",
-            "github": "https://www.google.com",
-            "visitable": true
+            "github": "https://github.com/Arnhoudt/integration3"
         }
     ],
     "whoAmI": [
